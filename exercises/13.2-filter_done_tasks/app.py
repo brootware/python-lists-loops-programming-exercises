@@ -12,4 +12,9 @@ tasks = [
 
 
 #Your code go here:
+def removeUndoneTasks(x):
+    if x["done"] == True:
+        return x
 
+doneTasks = list(filter(removeUndoneTasks,tasks))
+print(doneTasks)

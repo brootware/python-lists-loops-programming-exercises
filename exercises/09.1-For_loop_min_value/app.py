@@ -5,3 +5,11 @@ my_list = [3344,34334,454543,342534,4563456,3445,23455,234,262,2335,
 35,243,371,3251,351223,13231243,734,856,56,53,234342,56,545343]
 
 #Your code here:
+def minInteger(arr):
+    val = 99999999999999999
+    for i in arr:
+        if i < val:
+            val = i
+    return val
+
+print(minInteger(my_list))

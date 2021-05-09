@@ -5,5 +5,22 @@ parking_state = [
 ]
 
 #Your code go here:
+def get_parking_lot():
+    state = {
+        "total_slots" : 0,
+        "available_slots" : 0,
+        "occupied_slots" : 0
+    }
 
+    for row in parking_state:
+        for col in row:
+            if col == 1:
+                state["occupied_slots"] += 1
+                state["total_slots"] += 1
+            elif col == 2:
+                state["available_slots"] += 1
+                state["total_slots"] += 1
 
+    return state          
+
+print(get_parking_lot())

@@ -5,3 +5,5 @@ contact = {
 }
 #Your code here:
 
+for k,v in contact.items():
+    print(k,':',v)

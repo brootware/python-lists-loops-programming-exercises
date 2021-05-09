@@ -3,4 +3,9 @@ coordinatesList = [[33.747252,-112.633853],[-33.867886, -63.987],[41.303921, -81
 
 # Your code go here:
 
+# list comprehension to create a new list
+# longitude = [i[1] for i in coordinatesList]
+# print(longitude)
 
+for i in coordinatesList:
+    print(i[1])
