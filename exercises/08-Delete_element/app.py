@@ -2,6 +2,13 @@ people = ['juan','ana','michelle','daniella','stefany','lucy','barak']
 
 def delete_person(person_name):
     # Your code here
+    updated_list = list(people)
+
+    for i in updated_list:
+        if i == person_name:
+            updated_list.remove(i)
+    
+    return updated_list
     
 
     
